@@ -1,4 +1,5 @@
-﻿@model Portfolio.Models.HomeViewModel
+﻿@using Microsoft.AspNetCore.Html
+@model Portfolio.Models.HomeViewModel
 
 @{
     ViewData["Title"] = "Home";
@@ -15,6 +16,7 @@
             <a href="#education" data-section="education">Education</a>
             <a href="#workExperience" data-section="workExperience">Experience</a>
             <a href="#projects" data-section="projects">Projects</a>
+            <a href="/files/resume.pdf" target="_blank" rel="noopener">Resume</a>
         </nav>
     </div>
 </header>
@@ -44,26 +46,16 @@
         <div class="education-list">
             @foreach (var school in Model.Education)
             {
-                <div target="_blank" rel="noopener" class="education-item" style="text-align:justify;">
-                    <div class="education-year">@school.YearRange</div>
-                    <div class="education-content">
-                        <h3 class="education-title">
-                            @school.Title
-                            <span class="education-university">@school.University</span>
-                        </h3>
-                        <div>
-                            <p>Thesis: @school.ThesisName - @school.ThesisDescription</p>
-                            <p>Relevant coursework: @school.Coursework</p>
-                            <div class="tech-pills">
-                                @foreach (var tech in school.TechStack)
-                                {
-                                    <span class="tech-pill">@tech</span>
-                                }
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
+                @if (!string.IsNullOrEmpty(school.Url))
+                {
+                    <a href="@school.Url" target="_blank" rel="noopener" class="education-item-link">
+                        @EducationContent(school)
+                    </a>
+                }
+                else
+                {
+                    @EducationContent(school)
+                }
             }
         </div>
     </section>
@@ -142,3 +134,32 @@
         </div>
     </div>
 </footer>
+
+
+@functions {
+    private static object EducationContent(Education school)
+    {
+        var techPills = string.Join("", school.TechStack.Select(tech =>
+            $"<span class=\"tech-pill\">{tech}</span>"
+        ));
+
+        return new HtmlString($@"
+            <div class=""education-item"" style=""text-align:justify;"">
+                <div class=""education-year"">{school.YearRange}</div>
+                <div class=""education-content"">
+                    <h3 class=""education-title"">
+                        {school.Title}
+                        <span class=""education-university"">{school.University}</span>
+                    </h3>
+                    <div>
+                        <p>Thesis: {school.ThesisName} - {school.ThesisDescription}</p>
+                        <p>Relevant coursework: {school.Coursework}</p>
+                        <div class=""tech-pills"">
+                            {techPills}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        ");
+    }
+}

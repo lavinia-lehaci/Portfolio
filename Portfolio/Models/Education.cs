@@ -9,5 +9,6 @@
         public string Coursework { get; set; } = "";
         public string YearRange { get; set; } = "";
         public List<string> TechStack { get; set; } = new List<string>();
+        public string Url { get; set; } =  "";
     }
 }
