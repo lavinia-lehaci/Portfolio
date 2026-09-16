@@ -1,0 +1,71 @@
+[
+  {
+    "Title": "Software Engineer",
+    "Company": "Milestone Systems, Bulgaria",
+    "Tasks": [
+      "Maintained and extended the Access Control system of XProtect, the company's core product, through bug fixes and new features.",
+      "Designed backend architecture, contributed to technical decisions, and translated client requirements into features.",
+      "Wrote end-to-end automated UI tests for the desktop application, and monitored test results through Jenkins.",
+      "Collaborated within a Scrum team and used Jira for tracking."
+    ],
+    "TechStack": [
+      "C#",
+      ".NET",
+      "PostgreSQL",
+      "REST API",
+      "FlaUI"
+    ],
+    "CompanyUrl": "https://www.milestonesys.com/products/software/xprotect/",
+    "YearRange": "07/2025 - 06/2026"
+  },
+  {
+    "Title": "Java Software Engineer",
+    "Company": "Semantic Web Company, Austria",
+    "Tasks": [
+      "Worked on PoolParty, the main platform of the company.",
+      "Designed and implemented a service to lemmatize text across large documents, improving classification accuracy.",
+      "Built REST APIs to connect the service with the main platform.",
+      "Wrote unit and mock tests for both the service and the platform.",
+      "Collaborated within an Agile team."
+    ],
+    "TechStack": [
+      "Java",
+      "Spring Framework",
+      "GraphDB",
+      "REST API",
+      "JUnit", "Mockito"
+    ],
+    "CompanyUrl": "https://www.poolparty.biz/",
+    "YearRange": "02/2020 - 12/2021"
+  },
+  {
+    "Title": "Student Worker",
+    "Company": "The LEGO Group, Denmark",
+    "Tasks": [
+      "Fixed bugs and improved UI in internal web applications.",
+      "Participated in Scrum ceremonies."
+    ],
+    "TechStack": [
+      "JavaScript",
+      "SAPUI5"
+    ],
+    "CompanyUrl": "https://www.lego.com/en-us/aboutus/lego-group",
+    "YearRange": "02/2019 - 01/2020"
+  },
+  {
+    "Title": "Software Developer Intern",
+    "Company": "everis S.L.U. Spain (now NTT DATA), Spain",
+    "Tasks": [
+      "Implemented a system to curate and automate categorization of data from CORDIS, European Union's primary public repository.",
+      "Converted the repository into Linked Open Data using different Semantic Web technologies."
+    ],
+    "TechStack": [
+      "Java",
+      "Spring",
+      "GraphDB",
+      "Vaadin"
+    ],
+    "CompanyUrl": "https://www.nttdata.com/global/en/",
+    "YearRange": "08/2018 - 12/2018"
+  }
+]

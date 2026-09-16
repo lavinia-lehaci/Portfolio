@@ -1,0 +1,144 @@
+﻿@model Portfolio.Models.HomeViewModel
+
+@{
+    ViewData["Title"] = "Home";
+}
+
+<header class="site-header">
+    <div class="header-inner">
+        <a href="" class="logo">
+            Lavinia-Elena Dimitrova
+            <span class="role">Software Engineer</span>
+        </a>
+        <nav class="main-nav">
+            <a href="#about" data-section="about">About</a>
+            <a href="#education" data-section="education">Education</a>
+            <a href="#workExperience" data-section="workExperience">Experience</a>
+            <a href="#projects" data-section="projects">Projects</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section id="hero" class="hero">
+        <h1>Hi, I'm <span class="name">Lavinia!</span></h1>
+        <p class="tagline">I am a software engineer with 4+ years of experience across different domains and technologies.</p>
+    </section>
+
+    <section id="about">
+        <h2>About</h2>
+        <p style="text-align:justify;">
+            I grew up in a small town in northern Romania before moving to Denmark to study software engineering. My career started with Java and semantic technologies, but over time I found myself drawn toward a different side of development. Through personal projects, I gradually transitioned to C#, eventually leading me to my current work with C# and .NET.
+            <br />
+            <br />
+            I'm particularly interested in deepening my knowledge of the .NET ecosystem and exploring game and app development in my own projects. I enjoy learning by building things and exploring technologies outside of my usual work.
+            <br />
+            <br />
+            In my spare time, you'll usually find me playing video games, mostly Valorant or Marvel Rivals. When I'm feeling less competitive, I enjoy crocheting, reading, or watching a good series or movie.
+        </p>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+
+        <div class="education-list">
+            @foreach (var school in Model.Education)
+            {
+                <div target="_blank" rel="noopener" class="education-item" style="text-align:justify;">
+                    <div class="education-year">@school.YearRange</div>
+                    <div class="education-content">
+                        <h3 class="education-title">
+                            @school.Title
+                            <span class="education-university">@school.University</span>
+                        </h3>
+                        <div>
+                            <p>Thesis: @school.ThesisName - @school.ThesisDescription</p>
+                            <p>Relevant coursework: @school.Coursework</p>
+                            <div class="tech-pills">
+                                @foreach (var tech in school.TechStack)
+                                {
+                                    <span class="tech-pill">@tech</span>
+                                }
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            }
+        </div>
+    </section>
+
+     <section id="workExperience">
+        <h2>Experience</h2>
+
+        <div class="workExperience-list">
+            @foreach (var job in Model.WorkExperience)
+            {
+                <a href="@job.CompanyUrl" target="_blank" rel="noopener" class="workExperience-item">
+                    <div class="workExperience-year">@job.YearRange</div>
+                    <div class="workExperience-content">
+                        <h3 class="workExperience-title">
+                            @job.Title
+                            <span class="workExperience-company">@job.Company</span>
+                        </h3>
+                        <ul class="workExperience-bullets" style="text-align:justify;">
+                            @foreach (var bullet in job.Tasks)
+                            {
+                                <li>@bullet</li>
+                            }
+                        </ul>
+                        <div class="tech-pills">
+                            @foreach (var tech in job.TechStack)
+                            {
+                                <span class="tech-pill">@tech</span>
+                            }
+                        </div>
+                    </div>
+                </a>
+            }
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-list">
+            @foreach (var project in Model.Projects)
+            {
+                <a href="@project.GitHubLink" target="_blank" rel="noopener" class="project-item">
+                   <img src="@project.ImageLink" class="imgProject" alt="@project.Title" />
+
+                    <div class="project-content">
+                        <h3 class="project-title">
+                            @project.Title
+                        </h3>
+                        <p style="text-align:justify;white-space:pre-line;">@project.Description</p>
+                        <div class="tech-pills">
+                            @foreach (var tech in project.TechStack)
+                            {
+                                <span class="tech-pill">@tech</span>
+                            }
+                        </div>
+                    </div>
+                </a>
+            }
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-inner">
+        <div class="footer-text">
+            <p class="footer-heading">Feel free to reach out if you want to talk!</p>
+            <p class="footer-meta"><i>Built with ASP.NET Core MVC, hosted on .... Source on GitHub.</i></p>
+        </div>
+
+        <div class="footer-socials">
+             <a href="https://www.linkedin.com/in/lehacilavinia/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <img src="/images/linkedin.svg" alt="LinkedIn" />
+            </a>
+            <a href="https://github.com/lavinia-lehaci" target="_blank" rel="noopener" aria-label="GitHub">
+                <img src="/images/github.svg" alt="GitHub" />
+            </a>
+        </div>
+    </div>
+</footer>

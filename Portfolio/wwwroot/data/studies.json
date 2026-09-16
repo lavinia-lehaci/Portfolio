@@ -1,0 +1,35 @@
+[
+  {
+    "Title": "M.Sc. Computer Science",
+    "University": "University of Vienna, Austria",
+    "ThesisName": "Vienna Game AI Library",
+    "ThesisDescription": "A collection of AI algorithms tailored for real-time strategy game development.",
+    "Coursework": "Combinatorial and Numerical Algorithms, Cloud Gaming, Foundation of Computer Graphics, Gaming Technologies, Parallel Architectures and Programming Models, Parallel Computing, Visualisation and Visual Data Analysis",
+    "YearRange": "2022 - 2025",
+    "TechStack": [
+      "C++",
+      "JavaScript",
+      "Python",
+      "WebGL",
+      "OpenCL",
+      "OpenMP"
+    ]
+  },
+  {
+    "Title": "B.Sc. Information and Communication Technology",
+    "University": "VIA University College, Denmark",
+    "ThesisName": "Order Communication Tool",
+    "ThesisDescription": "A system designed to simplify the process of ordering LEGO bricks internally, done in collaboration with The LEGO Group.",
+    "Coursework": "Algorithms and Data Structures, Android Development, Applied Linear Algebra, Computer Architecture Lab, Digital Multimedia, Mixed Reality, Serious Games, .NET Programming",
+    "YearRange": "2016 - 2020",
+    "TechStack": [
+      "Java",
+      "C++",
+      "C#",
+      "C",
+      ".NET Framework",
+      "Unity3D",
+      "AR/VR"
+    ]
+  }
+]

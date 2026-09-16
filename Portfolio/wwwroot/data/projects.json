@@ -1,0 +1,29 @@
+[
+  {
+    "Title": "Vienna Game AI Library",
+    "Description": "Built as my Master's thesis, Vienna Game AI Library is a collection of AI algorithms to be used for developing 2D real-time strategy games. \nThe library includes A* with geometric preprocessing, decision trees, finite state machines, and various steering behaviours. For each algorithm implemented, I created a small demo to demonstrate how it can be used in a game.",
+    "ImageLink": "/images/vgail.png",
+    "GitHubLink": "https://github.com/lavinia-lehaci/ViennaGameAILibrary",
+    "TechStack": [
+      "C++", "raylib", "CMake"
+    ]
+  },
+  {
+    "Title": "Procedural Terrain Generator",
+    "Description": "I created this tool to experiment with different terrain types and characteristics. Currently it can be used within the Unity Editor only, through the Unity Inspector. \n \n With this tool, various landscapes can be created automatically based on configurable parameters. It uses Perlin Noise to generate natural-looking height variations across the terrain, and offers options for adjusting terrain elevation, frequency, and height ranges.",
+    "ImageLink": "/images/ptg.png",
+    "GitHubLink": "https://github.com/lavinia-lehaci/Procedural-Terrain-Generator",
+    "TechStack": [
+      "C#", "Unity"
+    ]
+  },
+  {
+    "Title": "Command Console",
+    "Description": "This is a console for Unity that supports predefined and customizable commands. It can be used as a debugging tool, but can also be integrated into games as a 'cheat' console. It also supports displaying Unity logs and stack traces when an error occurs.",
+    "ImageLink": "/images/cc.png",
+    "GitHubLink": "https://github.com/lavinia-lehaci/Command-Console",
+    "TechStack": [
+      "C#", "Unity"
+    ]
+  }
+]
