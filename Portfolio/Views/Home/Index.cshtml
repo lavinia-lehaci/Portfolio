@@ -12,10 +12,11 @@
             <span class="role">Software Engineer</span>
         </a>
         <nav class="main-nav">
-            <a href="#about" data-section="about">About</a>
+            <a href="#about" data-section="about">About me</a>
             <a href="#education" data-section="education">Education</a>
             <a href="#workExperience" data-section="workExperience">Experience</a>
             <a href="#projects" data-section="projects">Projects</a>
+            <a href="#skills" data-section="skills">Skills</a>
             <a href="/files/resume.pdf" target="_blank" rel="noopener">Resume</a>
         </nav>
     </div>
@@ -28,7 +29,7 @@
     </section>
 
     <section id="about">
-        <h2>About</h2>
+        <h2>About me</h2>
         <p style="text-align:justify;">
             I grew up in a small town in northern Romania before moving to Denmark to study software engineering. My career started with Java and semantic technologies, but over time I found myself drawn toward a different side of development. Through personal projects, I gradually transitioned to C#, eventually leading me to my current work with C# and .NET.
             <br />
@@ -36,7 +37,7 @@
             I'm particularly interested in deepening my knowledge of the .NET ecosystem and exploring game and app development in my own projects. I enjoy learning by building things and exploring technologies outside of my usual work.
             <br />
             <br />
-            In my spare time, you'll usually find me playing video games, mostly Valorant or Marvel Rivals. When I'm feeling less competitive, I enjoy crocheting, reading, or watching a good series or movie.
+            In my spare time, you'll usually find me playing video games, crocheting, reading, or watching a good movie.
         </p>
     </section>
 
@@ -115,6 +116,27 @@
             }
         </div>
     </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-img">
+            <img src="~/images/csharp.svg" title="C#" />
+            <img src="~/images/cpp.svg" title="C++" />
+            <img src="~/images/java.svg" title="Java" />
+            <img src="~/images/python.svg" title="Python" />
+            <img src="~/images/javascript.svg" title="JavaScript" />
+            <img src="~/images/dotnet.svg" title=".NET" />
+            <img src="~/images/ef.svg" title="Entity Framework" />
+            <img src="~/images/spring.svg" title="Spring Framework" />
+            <img src="~/images/raylib.svg" title="raylib" />
+            <img src="~/images/unity.svg" title="Unity Engine" />
+            <img src="~/images/postgresql.svg" title="PostgreSQL" />
+            <img src="~/images/vs.svg" title="Visual Studio" />
+            <img src="~/images/vsc.svg" title="Visual Studio Code" />
+            <img src="~/images/git.svg" title="Git" />
+            <img src="~/images/jira.svg" title="Jira" />
+        </div>
+    </section>
 </main>
 
 <footer class="site-footer">
@@ -125,16 +147,15 @@
         </div>
 
         <div class="footer-socials">
-             <a href="https://www.linkedin.com/in/lehacilavinia/" target="_blank" rel="noopener" aria-label="LinkedIn">
+             <a href="https://www.linkedin.com/in/lehacilavinia/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
                 <img src="/images/linkedin.svg" alt="LinkedIn" />
             </a>
-            <a href="https://github.com/lavinia-lehaci" target="_blank" rel="noopener" aria-label="GitHub">
+            <a href="https://github.com/lavinia-lehaci" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
                 <img src="/images/github.svg" alt="GitHub" />
             </a>
         </div>
     </div>
 </footer>
-
 
 @functions {
     private static object EducationContent(Education school)
