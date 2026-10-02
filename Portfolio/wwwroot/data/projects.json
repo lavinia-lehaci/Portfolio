@@ -5,7 +5,24 @@
     "ImageLink": "/images/vgail.png",
     "GitHubLink": "https://github.com/lavinia-lehaci/ViennaGameAILibrary",
     "TechStack": [
-      "C++", "raylib", "CMake"
+      "C++",
+      "raylib",
+      "CMake"
+    ]
+  },
+  {
+    "Title": "Job Application Tracker",
+    "Description": "I built this REST API service to track my applications while job hunting, but also to learn some things I hadn't worked with before, like JWT authentication. It is fully tested and containerized. I plan to create a frontend to interact with the API visually, but until then, Scalar or Postman should be enough to use the service.",
+    "ImageLink": "/images/jobAppTracker.png",
+    "GitHubLink": "https://github.com/lavinia-lehaci/job-application-tracker",
+    "TechStack": [
+      "C#/.NET",
+      "ASP.NET Core Web API",
+      "EF Core",
+      "PostgreSQL",
+      "Docker",
+      "XUnit",
+      "Testcontainers"
     ]
   },
   {
@@ -14,7 +31,8 @@
     "ImageLink": "/images/ptg.png",
     "GitHubLink": "https://github.com/lavinia-lehaci/Procedural-Terrain-Generator",
     "TechStack": [
-      "C#", "Unity"
+      "C#",
+      "Unity"
     ]
   },
   {
@@ -23,7 +41,8 @@
     "ImageLink": "/images/cc.png",
     "GitHubLink": "https://github.com/lavinia-lehaci/Command-Console",
     "TechStack": [
-      "C#", "Unity"
+      "C#",
+      "Unity"
     ]
   }
 ]
