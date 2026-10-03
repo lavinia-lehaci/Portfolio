@@ -3,7 +3,7 @@
 My personal portfolio website, built to showcase my background, experience, projects, and skills.
 
 🔗 **Live site:** https://lavinia-dim-portfolio-c4dhdqaecuapc6fz.swedencentral-01.azurewebsites.net/
-> **Note:** This site is hosted on Azure's free tier, which spins down after periods of inactivity. The first load after some idle time may take up a few seconds.
+> **Note:** This site is hosted on Azure's free tier, which spins down after periods of inactivity. The first load after some idle time may take a few seconds.
 
 ## Tech stack
 
